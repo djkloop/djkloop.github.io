@@ -1,0 +1,28 @@
+{
+  "name": "hugo-blog",
+  "version": "1.0.0",
+  "description": "hugo-blog",
+  "main": "index.js",
+  "scripts": {
+    "start": "hugo server --buildFuture",
+    "build": "hugo --buildFuture",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djkloop/djkloop.cn.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/djkloop/djkloop.cn/issues"
+  },
+  "homepage": "https://github.com/djkloop/djkloop.cn#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1"
+  }
+}

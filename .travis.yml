@@ -9,6 +9,7 @@ install:
 
 script:
     - hugo --buildFuture
+    - gulp
     - echo 'Build done!'
 after_success:
     - git config --global user.email "1044032256@qq.com"
