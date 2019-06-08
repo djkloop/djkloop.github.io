@@ -23,5 +23,6 @@ after_success:
     - git status
     - git add .
     - git commit -m 'Travis upate blog'
+    - git config --list
     - git push -u origin gh-pages -f
     - curl -d "" ${DEPLOY_API}
