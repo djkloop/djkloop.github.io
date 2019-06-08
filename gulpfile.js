@@ -1,6 +1,5 @@
 const gulp = require("gulp");
 const htmlmin = require('gulp-htmlmin');
-const xml2js = require('xml2js')
 
 
 

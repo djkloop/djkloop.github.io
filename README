@@ -1,5 +1,6 @@
-[![Build Status](https://travis-ci.org/djkloop/djkloop.cn.svg?branch=master)](https://travis-ci.org/djkloop/djkloop.cn)
 
-
+<p align="center">
+  <a href="https://travis-ci.org/djkloop/djkloop.cn.svg?branch=master"><img src="https://travis-ci.org/djkloop/djkloop.cn.svg?branch=master" alt="Build Status"></a>
+</p>
 
 theme = "hugo-cactus-dark"
