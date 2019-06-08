@@ -17,6 +17,7 @@ after_success:
     - git clone https://${ACCESS_TOKEN}@github.com/djkloop/djkloop.cn.git container
     - rm -rf container/*
     - cp -r public/* container
+    - ls container
     - cd container
     - git add .
     - git commit -m 'Travis upate blog'
