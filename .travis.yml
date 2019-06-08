@@ -15,14 +15,11 @@ after_success:
     - git config --global user.email "1044032256@qq.com"
     - git config --global user.name "djkloop"
     - git clone https://${ACCESS_TOKEN}@github.com/djkloop/djkloop.cn.git container
+    - cp -r public/README.md container/README.md
     - rm -rf container/*
     - cp -r public/* container
-    - ls container
     - cd container
-    - git branch -a
-    - git status
     - git add .
     - git commit -m 'Travis upate blog'
-    - git config --list
     - git push -f https://${ACCESS_TOKEN}@github.com/djkloop/djkloop.cn.git master:gh-pages
     - curl -d "" ${DEPLOY_API}
