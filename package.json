@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/djkloop/djkloop.cn#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "workbox-build": "^3.6.3"
   },
   "dependencies": {
     "gulp-htmlmin": "^5.0.1"
