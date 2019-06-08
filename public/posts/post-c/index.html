@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html data-hugo-use-theme="hugo-theme-cactus-dark" lang="zh-CN">
+<head>
+    
+<meta name="generator" content="Hugo 0.55.6" />
+
+<meta charset="utf-8"/>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+<meta name='description' itemprop="description" content="This is Post C">
+
+<meta name="keywords" content="djkloop, 前端爱好者, 前端开发, web前端博客, js, html5, css, Vue.js, React.js, Angular.js, node.js" >
+
+
+<meta name="keywords" content=""/>
+
+<meta name="author" content="djkloop"/>
+
+<meta property="og:locale" content="en_US" />
+<meta property="og:title" content="Post C">
+<meta property="og:image" content="https://djkloop.github.io/images/logo2.png">
+<meta property="og:description" content="This is Post C">
+<meta property="og:site_name" content="😪">
+
+<meta name="robots" content="index,follow"/>
+
+<meta name="apple-mobile-web-app-title" content="Post C">
+
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+
+<meta name="apple-itunes-app" content="app-id=myAppStoreID, affiliate-data=myAffiliateData, app-argument=myURL">
+
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+<meta name="format-detection" content="telphone=no, email=no"/>
+
+
+<meta name="renderer" content="webkit">
+
+<link rel="shortcut icon" href="https://djkloop.github.io/images/favicon.png" type="image/x-icon" />
+<link rel="stylesheet" href="https://djkloop.github.io/css/normalize.css" type="text/css">
+<link href="https://djkloop.github.io/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://djkloop.github.io/css/style.css" type="text/css">
+<link rel="stylesheet" href="https://djkloop.github.io/css/highlight.css" type="text/css">
+
+
+
+<script src="https://cdn.bootcss.com/highlight.js/9.15.8/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script src="https://djkloop.github.io/js/lib/jquery.min.js"></script>
+<script>
+    document.addEventListener("error", function (e) {
+        var elem = e.target;
+        if (elem.tagName.toLowerCase() == 'img') {
+            elem.style.display='none'
+        }
+    }, true);
+</script>
+
+    <title>Post C | 前端爱好者 - djkloop </title>
+</head>
+
+<bod>
+    <div id="header-post">
+    <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+    <a id="menu-icon-tablet" href="#"><i class="fa fa-bars fa-lg"></i></a>
+    <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa fa-chevron-up fa-lg"></i></a>
+    <span id="menu">
+      <span id="nav">
+        <ul>
+          <li> <a href="/">Home</a></li>
+<li> <a href="/about/">About</a></li>
+<li> <a href=" /writing/">Writing</a></li>
+<li> <a href="https://github.com/djkloop" target="_blank">Github</a></li>
+
+        </ul>
+      </span>
+      <br/>
+      <span id="actions">
+        <ul>
+            
+            <li><a class="icon" href="https://djkloop.github.io/posts/post-b/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover='$("#i-prev").toggle();' onmouseout='$("#i-prev").toggle();'></i></a></li>
+            
+            
+            <li><a class="icon" href="https://djkloop.github.io/writing/wr-a/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover='$("#i-next").toggle();' onmouseout='$("#i-next").toggle();'></i></a></li>
+            
+          <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover='$("#i-top").toggle();' onmouseout='$("#i-top").toggle();'></i></a></li>
+          <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover='$("#i-share").toggle();' onmouseout='$("#i-share").toggle();' onclick='$("#share").toggle();return false;'></i></a></li>
+        </ul>
+        <span id="i-prev" class="info" style="display:none;">Previous post</span>
+        <span id="i-next" class="info" style="display:none;">Next post</span>
+        <span id="i-top" class="info" style="display:none;">Back to top</span>
+        <span id="i-share" class="info" style="display:none;">Share post</span>
+      </span>
+      <br/>
+      <div id="share" style="display: none">
+          <ul>
+  <li><a class="icon" target="_blank"  href="http://v.t.sina.com.cn/share/share.php?u=https%3a%2f%2fdjkloop.github.io%2fposts%2fpost-c%2f&text=Post%20C"><i class="fab fa-weibo " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank"  href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fdjkloop.github.io%2fposts%2fpost-c%2f"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank"  href="https://twitter.com/share?url=https%3a%2f%2fdjkloop.github.io%2fposts%2fpost-c%2f&text=Post%20C"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank"  href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fdjkloop.github.io%2fposts%2fpost-c%2f&title=Post%20C"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank"  href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fdjkloop.github.io%2fposts%2fpost-c%2f&is_video=false&description=Post%20C"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank"  href="mailto:?subject=Post%20C&body=Check out this article: https%3a%2f%2fdjkloop.github.io%2fposts%2fpost-c%2f"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank"  href="https://getpocket.com/save?url=https%3a%2f%2fdjkloop.github.io%2fposts%2fpost-c%2f&title=Post%20C"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank"  href="http://reddit.com/submit?url=https%3a%2f%2fdjkloop.github.io%2fposts%2fpost-c%2f&title=Post%20C"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank"  href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fdjkloop.github.io%2fposts%2fpost-c%2f&title=Post%20C"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank"  href="http://digg.com/submit?url=https%3a%2f%2fdjkloop.github.io%2fposts%2fpost-c%2f&title=Post%20C"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+</ul>
+
+
+      </div>
+      <div id="toc">
+            
+      </div>
+    </span>
+  </div>
+    <div class="content index width mx-auto px3 my3">
+      <section id="wrapper" class="home">
+        <article class="post">
+            <header>
+              <h1 class="posttitle" itemprop="name headline">
+                Post C
+              </h1>
+              <div class="meta">
+                <div class="postdate">
+                  <time datetime='2019-06-08' itemprop="datePublished">2019-06-08</time>
+                </div>
+                <div class="article-tag">
+                  <i class="fa fa-eye"></i>
+                  <span id="busuanzi_container_page_pv">
+                      <span id="busuanzi_value_page_pv">0</span>
+                    </span>
+                  </span>
+                </div>
+                
+                  <div class="article-tag">
+                    <i class="fa fa-tag"></i>
+                    
+                    <a href="/tags/%E5%89%8D%E7%AB%AF">
+                        前端</a>
+                      
+                  </div>
+                
+                <div class="article-tag-box">
+                </div>
+              </div>
+            </header>
+            <div class="content">
+              <p>This is Post C</p>
+
+              <h2> 本文链接：</h2>
+              <a href='https://djkloop.github.io/posts/post-c/' target="_blank">https://djkloop.github.io/posts/post-c/</a>
+              <ul id="more-post-list" class="archive readmore">
+    <h2>其他推荐：</h2>
+    
+    
+    
+        <li>
+          <a href="/writing/wr-d/">
+              <span style="display: block;font-size: 16px;">Wr D</span>
+              </i><aside class="dates"><i class="fas fa-clock" style="font-size: 12px;margin-right:5px;line-height:1.5;"></i>2019-06-08 03:58</aside>
+          </a>
+        </li>
+    
+        <li>
+          <a href="/writing/wr-c/">
+              <span style="display: block;font-size: 16px;">Wr C</span>
+              </i><aside class="dates"><i class="fas fa-clock" style="font-size: 12px;margin-right:5px;line-height:1.5;"></i>2019-06-08 03:57</aside>
+          </a>
+        </li>
+    
+        <li>
+          <a href="/writing/wr-b/">
+              <span style="display: block;font-size: 16px;">Wr B</span>
+              </i><aside class="dates"><i class="fas fa-clock" style="font-size: 12px;margin-right:5px;line-height:1.5;"></i>2019-06-08 03:57</aside>
+          </a>
+        </li>
+    
+</ul>
+            </div>
+        </article>
+        
+          <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<div class="blog-post-comments"></div>
+<script>
+    new Valine({
+        el: '.blog-post-comments', 
+        app_id: "db74NGgiUiGT5HkLTBoDK7Tl-gzGzoHsz", 
+        app_key: "ApR14unweK4ln7MlK4yDGn63", 
+        placeholder: "just go go", 
+        avatar: "mp",
+        notify: false ,
+        verify: false 
+    });
+</script>
+
+        
+      </section>
+    </div>
+    
+<footer id="footer">
+  <div class="footer-left">
+    Copyright © 2019  PoweredBy <a target="_blank" href="https://gohugo.io/">Hugo</a> <a href="http://www.miitbeian.gov.cn" rel="external nofollow noopener noreferrer" target="_blank">京ICP备18019502号 </a>
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <li> <a href="/">Home</a></li>
+<li> <a href="/about/">About</a></li>
+<li> <a href=" /writing/">Writing</a></li>
+<li> <a href="https://github.com/djkloop" target="_blank">Github</a></li>
+
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    
+
+<script src="https://djkloop.github.io/js/lib/typed.js"></script>
+<script src="https://djkloop.github.io/js/main.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker
+                .register('/sw.js')
+                .then(registration => {
+                    console.log('SW registered: ', registration);
+                })
+                .catch(registrationError => {
+                    console.log('SW registration failed: ', registrationError);
+                });
+        });
+    }
+</script>
+
+
+
+
+  </body>
+</html>
