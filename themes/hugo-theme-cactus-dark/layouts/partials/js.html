@@ -63,9 +63,10 @@
 
 <script>
     if ('serviceWorker' in navigator) {
+        console.log('xxxxx')
         window.addEventListener('load', () => {
             navigator.serviceWorker
-                .register('/sw.js')
+                .register('/djkloop.cn/sw.js')
                 .then(registration => {
                     console.log('SW registered: ', registration);
                 })
