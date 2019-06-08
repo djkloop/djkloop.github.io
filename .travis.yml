@@ -15,7 +15,7 @@ after_success:
     - git config --global user.email "1044032256@qq.com"
     - git config --global user.name "djkloop"
     - git clone https://${ACCESS_TOKEN}@github.com/djkloop/djkloop.cn.git container
-    - cp -r public/README.md container/README.md
+    - cp container/README.md public/README.md
     - rm -rf container/*
     - cp -r public/* container
     - cd container
