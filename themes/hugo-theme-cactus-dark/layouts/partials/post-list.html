@@ -27,7 +27,7 @@
   </p>
 </section>
 <section id="writing">
-  <span class="h1"><a href="/writing/">Writing</a></span>
+  <span class="h1"><a href="{{.Site.BaseURL}}writing/">Writing</a></span>
   <ul class="post-list" id="post-list">
     {{$count := 0}}
     {{ range where .Pages "Params.hidden" "ne" "true" }}
