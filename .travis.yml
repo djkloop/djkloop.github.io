@@ -20,6 +20,7 @@ after_success:
     - ls container
     - cd container
     - git branch -a
+    - git status
     - git add .
     - git commit -m 'Travis upate blog'
     - git push -u origin gh-pages -f
