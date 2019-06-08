@@ -19,6 +19,7 @@ after_success:
     - cp -r public/* container
     - ls container
     - cd container
+    - git branch -a
     - git add .
     - git commit -m 'Travis upate blog'
     - git push -u origin gh-pages -f
