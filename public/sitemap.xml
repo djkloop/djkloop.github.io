@@ -38,6 +38,11 @@
   </url>
   
   <url>
+    <loc>https://djkloop.github.io/djkloop.cn/writing/</loc>
+    <lastmod>2019-06-08T01:49:03+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://djkloop.github.io/djkloop.cn/about/</loc>
     <lastmod>2019-06-08T01:35:45+08:00</lastmod>
   </url>
@@ -67,12 +72,6 @@
   
   <url>
     <loc>https://djkloop.github.io/djkloop.cn/tags/wr/</loc>
-    <lastmod>2019-06-08T15:58:08+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://djkloop.github.io/djkloop.cn/writing/</loc>
     <lastmod>2019-06-08T15:58:08+08:00</lastmod>
     <priority>0</priority>
   </url>

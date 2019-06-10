@@ -1,6 +1,7 @@
 ---
 title: "Writing"
 date: 2019-06-08T01:49:03+08:00
-draft: true
+draft: false
+hidden: true
 ---
 
