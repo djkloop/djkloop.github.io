@@ -42,6 +42,7 @@
 <link rel="shortcut icon" href="{{ .Site.BaseURL }}images/favicon.png" type="image/x-icon" />
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/normalize.css" type="text/css">
 <link href="{{ .Site.BaseURL }}css/all.min.css" rel="stylesheet">
+{{ partial "css.html" . }}
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css" type="text/css">
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/highlight.css" type="text/css">
 {{ if .Site.Params.enableRSS }}

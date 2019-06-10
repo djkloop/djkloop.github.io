@@ -1,0 +1,23 @@
+{
+  "name": "@djkloop/hugo-theme-cactus-dark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "lint": "gulp lint --silent",
+    "build": "gulp build",
+    "clean": "stylus-supremacy format source/css/**/*.styl --options .stylintrc -r"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-stylint": "^4.0.1",
+    "gulp-stylus": "^2.7.0",
+    "stylint": "^1.5.9",
+    "stylint-stylish": "^1.4.1",
+    "stylus-supremacy": "^2.9.0"
+  }
+}

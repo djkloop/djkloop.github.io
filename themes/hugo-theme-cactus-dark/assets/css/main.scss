@@ -1,0 +1,38 @@
+// config.yml
+$paramColorscheme: {{ .Param "themeColorDefault.colorscheme" }};
+$paramLogoWidth: {{ .Param "customize.logo.width" }};
+$paramLogoHeight: {{ .Param "customize.logo.height" }};
+$paramPageWidth: {{ .Param "page_width" }};
+$paramHighlight: {{ .Param "highlight" }};
+
+// config.yml not found default
+
+$paramLogoWidth: 0 !default;
+$paramLogoHeight: 0 !default;
+$paramPageWidth: 39 !default;
+$paramLogoWidth: "dark" !default;
+$paramHighlight: "rainbow" !default;
+
+//
+@import "./_colors/_dark";
+@import "./_variables/_variables";
+@import "./_util/_util";
+@import "./_mixins/_mixins";
+
+body {
+
+
+  font-size: $font-size !important;
+
+  content: $font-family-body;
+  content: $font-family-mono;
+  content: $font-family-tt;
+  content: $font-size;
+  content: $line-height;
+  content: $page-width;
+  content: $logo-width;
+  content: $logo-height;
+  content: $colors;
+  content: $color-footer-mobile-1;
+  content: $highlight;
+}
