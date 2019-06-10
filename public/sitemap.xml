@@ -3,44 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://djkloop.github.io/djkloop.cn/categories/</loc>
-    <lastmod>2019-06-08T15:58:08+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://djkloop.github.io/djkloop.cn/categories/</loc>
-    <lastmod>2019-06-08T15:58:08+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://djkloop.github.io/djkloop.cn/tags/</loc>
-    <lastmod>2019-06-08T15:58:08+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://djkloop.github.io/djkloop.cn/writing/wr-d/</loc>
     <lastmod>2019-06-08T15:58:08+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://djkloop.github.io/djkloop.cn/writing/</loc>
-    <lastmod>2019-06-08T15:58:08+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://djkloop.github.io/djkloop.cn/tags/wr/</loc>
-    <lastmod>2019-06-08T15:58:08+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://djkloop.github.io/djkloop.cn/</loc>
-    <lastmod>2019-06-08T15:58:08+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -64,8 +28,47 @@
   </url>
   
   <url>
+    <loc>https://djkloop.github.io/djkloop.cn/posts/post-b/</loc>
+    <lastmod>2019-06-08T15:51:37+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://djkloop.github.io/djkloop.cn/posts/post-a/</loc>
+    <lastmod>2019-06-08T15:51:31+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://djkloop.github.io/djkloop.cn/categories/</loc>
+    <lastmod>2019-06-08T15:58:08+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://djkloop.github.io/djkloop.cn/categories/</loc>
+    <lastmod>2019-06-08T15:58:08+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://djkloop.github.io/djkloop.cn/posts/</loc>
     <lastmod>2019-06-08T15:51:59+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://djkloop.github.io/djkloop.cn/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://djkloop.github.io/djkloop.cn/tags/wr/</loc>
+    <lastmod>2019-06-08T15:58:08+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://djkloop.github.io/djkloop.cn/writing/</loc>
+    <lastmod>2019-06-08T15:58:08+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -76,13 +79,9 @@
   </url>
   
   <url>
-    <loc>https://djkloop.github.io/djkloop.cn/posts/post-b/</loc>
-    <lastmod>2019-06-08T15:51:37+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://djkloop.github.io/djkloop.cn/posts/post-a/</loc>
-    <lastmod>2019-06-08T15:51:31+08:00</lastmod>
+    <loc>https://djkloop.github.io/djkloop.cn/</loc>
+    <lastmod>2019-06-08T15:58:08+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>
