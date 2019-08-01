@@ -78,6 +78,6 @@ gulp.task('minify', () => {
   });
 
 gulp.task("default",[
-    'minify',
-    'generate-service-worker'
+    'generate-service-worker',
+    'minify'
 ])
