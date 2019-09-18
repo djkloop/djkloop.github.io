@@ -13,6 +13,8 @@
 
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
+workbox.core.setCacheNameDetails({prefix: "/11111"});
+
 workbox.skipWaiting();
 workbox.clientsClaim();
 
