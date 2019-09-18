@@ -17,6 +17,7 @@ after_success:
     - git clone https://${ACCESS_TOKEN}@github.com/djkloop/djkloop.cn.git container
     - cp container/README.md public/README.md
     - cp container/CNNAME public/CNAME
+    - cp container/static/manifest.json public/manifest.json
     - rm -rf container/*
     - cp -r public/* container
     - cd container
