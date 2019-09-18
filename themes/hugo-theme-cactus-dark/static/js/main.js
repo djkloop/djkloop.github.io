@@ -107,7 +107,7 @@ $(document).ready(function() {
 
 // 顶部文案
 $(function() {
-  if(location.pathname !== '/djkloop.cn/') return;
+  if(location.pathname !== '/') return;
   var data = {
     content: "这个博客主题太🤙🤙🤙(666)了!",
     translation: "实在太好看了, 太好看了, 好看了, 看了, 了...",
