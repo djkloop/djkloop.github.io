@@ -11,7 +11,7 @@ if [ $# -eq 1  ]
 fi
 
 # Build the project.
-npm run build
+npm run build && npm run algolia
 
 # Add changes to git.
 git add .
