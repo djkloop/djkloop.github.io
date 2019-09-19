@@ -1,23 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on 😪</title>
+    <title>😪</title>
     <link>https://djkloop.cn/categories/</link>
-    <description>Recent content in Categories on 😪</description>
+    <description>Recent content on 😪</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 19 Sep 2019 16:01:54 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 08 Jun 2019 15:57:28 +0800</lastBuildDate>
     
 	<atom:link href="https://djkloop.cn/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title></title>
-      <link>https://djkloop.cn/categories/</link>
-      <pubDate>Thu, 19 Sep 2019 16:01:54 +0800</pubDate>
+      <title>Wr A</title>
+      <link>https://djkloop.cn/writing/wr-a/</link>
+      <pubDate>Sat, 08 Jun 2019 15:57:28 +0800</pubDate>
       
-      <guid>https://djkloop.cn/categories/</guid>
-      <description></description>
+      <guid>https://djkloop.cn/writing/wr-a/</guid>
+      <description>angular cli 内置了 webpack,所以也是可以配置路径别名的. 而且配置的方式几乎是一样的.
+ 配置路径别名 找到你的项目根目录的 tsconfig.json 文件.
+注意: 如果你的配置不生效,需要查看你的baseUrl是否配置正确.
+{ &amp;quot;compilerOptions&amp;quot;: { &amp;quot;baseUrl&amp;quot;: &amp;quot;./src/&amp;quot;, &amp;quot;paths&amp;quot;: { &amp;quot;@app/*&amp;quot;: [&amp;quot;app/*&amp;quot;], &amp;quot;@services/*&amp;quot;: [&amp;quot;app/services/*&amp;quot;] } } }  配置之前 import { Api } from &#39;../../../../../services/api.service&#39;; import { xxx } from &#39;../../../../../services/api.xxx&#39;;  测试 if(a === b) { console.log(&#39;yellow&#39;) }  配置之后 import { Api } from &#39;@services/api.service&#39;; import { xxx } from &#39;@services/api.xxx&#39;;  一些开发中的小技巧,希望可以帮到你.</description>
     </item>
     
   </channel>

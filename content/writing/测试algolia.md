@@ -3,8 +3,8 @@ title = "测试algolia"
 date = 2019-09-19T16:01:54+08:00
 tags = [""]
 categories = [""]
-draft = false
-isSearch = true
+draft = true
+index = true
 +++
 
 
