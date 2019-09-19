@@ -11,7 +11,7 @@ if [ $# -eq 1  ]
 fi
 
 # Build the project.
-hugo
+npm run build
 
 # Add changes to git.
 git add .
