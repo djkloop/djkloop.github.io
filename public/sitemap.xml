@@ -3,6 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://djkloop.cn/writing/%E6%B5%8B%E8%AF%95algolia/</loc>
+    <lastmod>2019-09-19T16:01:54+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://djkloop.cn/writing/wr-a/</loc>
     <lastmod>2019-06-08T15:57:28+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -24,21 +31,29 @@
   </url>
   
   <url>
-    <loc>https://djkloop.cn/categories/</loc>
-    <lastmod>2019-06-08T15:57:28+08:00</lastmod>
+    <loc>https://djkloop.cn/tags/</loc>
+    <lastmod>2019-09-19T16:01:54+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://djkloop.cn/categories/</loc>
-    <lastmod>2019-06-08T15:57:28+08:00</lastmod>
+    <lastmod>2019-09-19T16:01:54+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://djkloop.cn/categories/</loc>
+    <lastmod>2019-09-19T16:01:54+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://djkloop.cn/tags/</loc>
+    <lastmod>2019-09-19T16:01:54+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -52,7 +67,7 @@
   
   <url>
     <loc>https://djkloop.cn/</loc>
-    <lastmod>2019-06-08T15:57:28+08:00</lastmod>
+    <lastmod>2019-09-19T16:01:54+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

@@ -12,6 +12,19 @@
     
     
     <item>
+      <title>测试algolia</title>
+      <link>https://djkloop.cn/writing/%E6%B5%8B%E8%AF%95algolia/</link>
+      <pubDate>Thu, 19 Sep 2019 16:01:54 +0800</pubDate>
+      
+      <guid>https://djkloop.cn/writing/%E6%B5%8B%E8%AF%95algolia/</guid>
+      <description>hugo-algolia Generate and send indices from Hugo static sites for use with Algolia.
+An alternative to the Docsearch plugin, allowing for manual index exports. Supports YAML, JSON, and TOML front matter.
+Installation Install hugo-algolia from npm
+npm install hugo-algolia  Or
+yarn add hugo-algolia  How does it work? hugo-algolia looks into the /content folder of your site by default and places a JSON file with the export into the /public folder, but if you&amp;rsquo;d like to use custom inputs and outputs just pass an -i or -o followed by your path via command line.</description>
+    </item>
+    
+    <item>
       <title>Wr A</title>
       <link>https://djkloop.cn/writing/wr-a/</link>
       <pubDate>Sat, 08 Jun 2019 15:57:28 +0800</pubDate>
