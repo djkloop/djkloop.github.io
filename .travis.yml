@@ -10,6 +10,7 @@ install:
 script:
     - hugo --buildFuture
     - gulp
+    - npm install hugo-algolia -g
     - echo 'Build done!'
 after_success:
     - git config --global user.email "1044032256@qq.com"
@@ -18,6 +19,7 @@ after_success:
     - cp container/README.md public/README.md
     - cp container/CNNAME public/CNAME
     - cp container/static/manifest.json public/manifest.json
+    - npm run algolia
     - rm -rf container/*
     - cp -r public/* container
     - cd container
