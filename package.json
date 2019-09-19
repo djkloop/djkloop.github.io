@@ -6,7 +6,7 @@
   "scripts": {
     "start": "hugo server --buildFuture",
     "build": "hugo --buildFuture",
-    "algolia": "hugo-algolia --config ./algolia.config.yaml"
+    "algolia": "hugo-algolia --config ./algolia.config.yaml -p 'isSearch' -all"
   },
   "repository": {
     "type": "git",

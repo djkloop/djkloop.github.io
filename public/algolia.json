@@ -1,20 +1,4 @@
 [
-    {
-        "title": "About Me",
-        "uri": "about",
-        "content": "about",
-        "objectID": "about",
-        "date": "2019-06-07T17:35:45.000Z",
-        "draft": false,
-        "hidden": true
-    },
-    {
-        "title": "Writing",
-        "uri": "writing",
-        "content": "",
-        "objectID": "writing",
-        "date": "2019-06-07T17:49:03.000Z",
-        "draft": false,
-        "hidden": true
-    }
+    {},
+    {}
 ]
