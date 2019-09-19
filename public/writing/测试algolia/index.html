@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html data-hugo-use-theme="hugo-theme-cactus-dark" lang="zh-CN">
+<head>
+    
+<meta name="generator" content="Hugo 0.54.0" />
+
+<meta charset="utf-8"/>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+<meta name='description' itemprop="description" content="hugo-algolia Generate and send indices from Hugo static sites for use with Algolia.
+An alternative to the Docsearch plugin, allowing for manual index exports. Supports YAML, JSON, and TOML front matte">
+
+<meta name="keywords" content="djkloop, 前端爱好者, 前端开发, web前端博客, js, html5, css, Vue.js, React.js, Angular.js, node.js" >
+
+
+<meta name="keywords" content=""/>
+
+<meta name="author" content="djkloop"/>
+
+<meta property="og:locale" content="en_US" />
+<meta property="og:title" content="测试algolia">
+<meta property="og:image" content="https://djkloop.cn/images/logo2.png">
+<meta property="og:description" content="hugo-algolia Generate and send indices from Hugo static sites for use with Algolia.
+An alternative to the Docsearch plugin, allowing for manual index exports. Supports YAML, JSON, and TOML front matte">
+<meta property="og:site_name" content="😪">
+<meta name="robots" content="index,follow"/>
+<meta name="apple-mobile-web-app-title" content="测试algolia">
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-itunes-app" content="app-id=myAppStoreID, affiliate-data=myAffiliateData, app-argument=myURL" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telphone=no, email=no"/>
+
+
+<meta name="renderer" content="webkit"/>
+
+<link rel="manifest" href="/manifest.json">
+
+<link rel="shortcut icon" href="https://djkloop.cn/images/favicon.png" type="image/x-icon" />
+<link rel="stylesheet" href="https://djkloop.cn/css/normalize.css" type="text/css">
+<link href="https://djkloop.cn/css/all.min.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/css/main.css" type="text/css">
+<link rel="stylesheet" href="https://djkloop.cn/css/style.css" type="text/css">
+<link rel="stylesheet" href="https://djkloop.cn/css/highlight.css" type="text/css">
+
+
+
+<script src="https://cdn.bootcss.com/highlight.js/9.15.8/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script src="https://djkloop.cn/js/lib/jquery.min.js"></script>
+<script>
+    document.addEventListener("error", function (e) {
+        var elem = e.target;
+        if (elem.tagName.toLowerCase() == 'img') {
+            elem.style.display='none'
+        }
+    }, true);
+</script>
+
+    <title>测试algolia | 前端爱好者 - djkloop </title>
+</head>
+
+<bod>
+    <div id="header-post">
+    <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+    <a id="menu-icon-tablet" href="#"><i class="fa fa-bars fa-lg"></i></a>
+    <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa fa-chevron-up fa-lg"></i></a>
+    <span id="menu">
+      <span id="nav">
+        <ul>
+          <li> <a href="https://djkloop.cn/">Home</a></li>
+<li> <a href="https://djkloop.cn/about/">About</a></li>
+<li> <a href=" https://djkloop.cn/writing/">Writing</a></li>
+<li> <a href="javascript:;">切换主题</a></li>
+<li> <a href="https://github.com/djkloop" target="_blank">Github</a></li>
+
+
+        </ul>
+      </span>
+      <br/>
+      <span id="actions">
+        <ul>
+            
+            <li><a class="icon" href="https://djkloop.cn/posts/%E6%B5%8B%E8%AF%95algolia/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover='$("#i-prev").toggle();' onmouseout='$("#i-prev").toggle();'></i></a></li>
+            
+            
+          <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover='$("#i-top").toggle();' onmouseout='$("#i-top").toggle();'></i></a></li>
+          <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover='$("#i-share").toggle();' onmouseout='$("#i-share").toggle();' onclick='$("#share").toggle();return false;'></i></a></li>
+        </ul>
+        <span id="i-prev" class="info" style="display:none;">Previous post</span>
+        <span id="i-next" class="info" style="display:none;">Next post</span>
+        <span id="i-top" class="info" style="display:none;">Back to top</span>
+        <span id="i-share" class="info" style="display:none;">Share post</span>
+      </span>
+      <br/>
+      <div id="share" style="display: none">
+          <ul>
+  <li><a class="icon" target="_blank"  href="http://v.t.sina.com.cn/share/share.php?u=https%3a%2f%2fdjkloop.cn%2fwriting%2f%25E6%25B5%258B%25E8%25AF%2595algolia%2f&text=%e6%b5%8b%e8%af%95algolia"><i class="fab fa-weibo " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank"  href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fdjkloop.cn%2fwriting%2f%25E6%25B5%258B%25E8%25AF%2595algolia%2f"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank"  href="https://twitter.com/share?url=https%3a%2f%2fdjkloop.cn%2fwriting%2f%25E6%25B5%258B%25E8%25AF%2595algolia%2f&text=%e6%b5%8b%e8%af%95algolia"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank"  href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fdjkloop.cn%2fwriting%2f%25E6%25B5%258B%25E8%25AF%2595algolia%2f&title=%e6%b5%8b%e8%af%95algolia"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank"  href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fdjkloop.cn%2fwriting%2f%25E6%25B5%258B%25E8%25AF%2595algolia%2f&is_video=false&description=%e6%b5%8b%e8%af%95algolia"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank"  href="mailto:?subject=%e6%b5%8b%e8%af%95algolia&body=Check out this article: https%3a%2f%2fdjkloop.cn%2fwriting%2f%25E6%25B5%258B%25E8%25AF%2595algolia%2f"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank"  href="https://getpocket.com/save?url=https%3a%2f%2fdjkloop.cn%2fwriting%2f%25E6%25B5%258B%25E8%25AF%2595algolia%2f&title=%e6%b5%8b%e8%af%95algolia"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank"  href="http://reddit.com/submit?url=https%3a%2f%2fdjkloop.cn%2fwriting%2f%25E6%25B5%258B%25E8%25AF%2595algolia%2f&title=%e6%b5%8b%e8%af%95algolia"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank"  href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fdjkloop.cn%2fwriting%2f%25E6%25B5%258B%25E8%25AF%2595algolia%2f&title=%e6%b5%8b%e8%af%95algolia"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank"  href="http://digg.com/submit?url=https%3a%2f%2fdjkloop.cn%2fwriting%2f%25E6%25B5%258B%25E8%25AF%2595algolia%2f&title=%e6%b5%8b%e8%af%95algolia"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+</ul>
+
+
+      </div>
+      <div id="toc">
+            <nav id="TableOfContents">
+<ul>
+<li><a href="#hugo-algolia">hugo-algolia</a>
+<ul>
+<li>
+<ul>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#how-does-it-work">How does it work?</a>
+<ul>
+<li><a href="#example">Example</a></li>
+</ul></li>
+<li><a href="#sending-to-algolia">Sending to Algolia</a></li>
+<li><a href="#what-if-i-don-t-want-to-index-a-specific-file">What if I don&rsquo;t want to index a specific file?</a></li>
+<li><a href="#options">Options</a>
+<ul>
+<li>
+<ul>
+<li><a href="#you-can-also-combine-any-of-the-above-commands-including-the-one-s-mentioned-outside-of-this-section">You can also combine any of the above commands, including the one&rsquo;s mentioned outside of this section:</a></li>
+</ul></li>
+<li><a href="#a-note-about-toml">A note about TOML</a></li>
+<li><a href="#a-note-about-duplicated-index-entries-and-objectids">A note about duplicated index entries and objectIDs</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#license">License</a></li>
+</ul>
+</nav>
+      </div>
+    </span>
+  </div>
+    <div class="content index width mx-auto px3 my3">
+      <section id="wrapper" class="home">
+        <article class="post">
+            <header>
+              <h1 class="posttitle" itemprop="name headline">
+                测试algolia
+              </h1>
+              <div class="meta">
+                <div class="postdate">
+                  <time datetime='2019-09-19' itemprop="datePublished">2019-09-19</time>
+                </div>
+                <div class="article-tag">
+                  <i class="fa fa-eye"></i>
+                  <span id="busuanzi_container_page_pv">
+                      <span id="busuanzi_value_page_pv">0</span>
+                    </span>
+                  </span>
+                </div>
+                
+                  <div class="article-tag">
+                    <i class="fa fa-tag"></i>
+                    
+                    <a href="/tags/">
+                        </a>
+                      
+                  </div>
+                
+                <div class="article-tag-box">
+                </div>
+              </div>
+            </header>
+            <div class="content">
+              
+
+<h1 id="hugo-algolia">hugo-algolia</h1>
+
+<p><strong>Generate and send indices from Hugo static sites for use with Algolia.</strong></p>
+
+<p>An alternative to the <a href="https://community.algolia.com/docsearch/">Docsearch</a> plugin, allowing for manual index exports. Supports YAML, JSON, and TOML front matter.</p>
+
+<h3 id="installation">Installation</h3>
+
+<p>Install <code>hugo-algolia</code> from <a href="https://npmjs.org">npm</a></p>
+
+<pre><code>npm install hugo-algolia
+</code></pre>
+
+<p>Or</p>
+
+<pre><code>yarn add hugo-algolia
+</code></pre>
+
+<h3 id="how-does-it-work">How does it work?</h3>
+
+<p><code>hugo-algolia</code> looks into the <code>/content</code> folder of your site by default and places a JSON file with the export into the <code>/public</code> folder, but if you&rsquo;d like to use custom inputs and outputs just pass an <code>-i</code> or <code>-o</code> followed by your path via command line.</p>
+
+<h4 id="example">Example</h4>
+
+<p>In your package.json file:</p>
+
+<pre><code>//Default
+scripts: {
+    &quot;index&quot;: &quot;hugo-algolia&quot;
+}
+</code></pre>
+
+<p>or</p>
+
+<pre><code>scripts: {
+    &quot;index&quot;: &quot;hugo-algolia -i \&quot;content/subdir/**\&quot; -o public/my-index.json&quot;
+}
+</code></pre>
+
+<h3 id="sending-to-algolia">Sending to Algolia</h3>
+
+<p>You can send your index to Algolia by including your API key, app ID, and index name in your config.yaml, which you can find in your Algolia account dashboard. Then, pass an <code>-s</code> flag to your <code>hugo-algolia</code> command.</p>
+
+<pre><code>---
+baseURL: &quot;/&quot;
+languageCode: &quot;en-us&quot;
+title: &quot;Your site name&quot;
+theme: &quot;your-theme&quot;
+description: &quot;A cool site!&quot;
+
+algolia:
+  index: &quot;index-name&quot;
+  key: &quot;[your API key]&quot;
+  appID: &quot;[your app id]&quot;
+---
+</code></pre>
+
+<p>then</p>
+
+<pre><code>scripts: {
+    &quot;index-and-send&quot;: &quot;hugo-algolia -s&quot;
+}
+</code></pre>
+
+<p><strong>If you don&rsquo;t want to set your write key in your <code>config.yaml</code>, you can also use environment variables. Just set a variable <code>ALGOLIA_WRITE_KEY</code> to the write key for your account, and the module will use that instead.</strong></p>
+
+<h3 id="what-if-i-don-t-want-to-index-a-specific-file">What if I don&rsquo;t want to index a specific file?</h3>
+
+<p>That&rsquo;s cool! Just set the <code>index</code> param in your file&rsquo;s front matter to <code>false</code> and <code>hugo-algolia</code> will skip it during the indexing process. Content with <code>draft: true</code> will also be ignored.</p>
+
+<h3 id="options">Options</h3>
+
+<p>There are a few flags you can use to customize your indices:</p>
+
+<ul>
+<li><code>-m</code> - Create multiple indices based on the default <code>index</code> param in the front matter of each markdown file, or another specified param.
+<code>
+hugo-algolia -m &quot;[optional-custom-param]&quot;
+</code></li>
+<li><code>-p</code> - Partially index files using only specified params.
+<code>
+hugo-algolia -p &quot;[param], [param], [param]&quot;
+</code></li>
+
+<li><p><code>-all</code> - By default, <code>hugo-algolia</code> skips content that doesn&rsquo;t have an <code>index</code> param, or whichever param you specify in your command. If you&rsquo;d like to index those files, use this flag.</p></li>
+
+<li><p><code>--config</code> - Pass in a custom config file.</p>
+
+<pre><code>hugo-algolia --config ./mysweetconfig.yaml
+</code></pre></li>
+</ul>
+
+<h5 id="you-can-also-combine-any-of-the-above-commands-including-the-one-s-mentioned-outside-of-this-section">You can also combine any of the above commands, including the one&rsquo;s mentioned outside of this section:</h5>
+
+<pre><code>hugo-algolia -m &quot;categories&quot; -p &quot;title, uri, categories&quot; -all
+</code></pre>
+
+<p>This command would create multiple indices depending on the category of each <code>.md</code> file, but only inlcude the <code>title</code>, <code>uri</code>, and <code>categories</code> information in the output file.</p>
+
+<h4 id="a-note-about-toml">A note about TOML</h4>
+
+<p>The <code>gray-matter</code> package used in this module does not support TOML front matter out of the box. If you&rsquo;re using TOML in your front matter, just use the <code>toml</code> flag in your command.</p>
+
+<pre><code>hugo-algolia -toml
+</code></pre>
+
+<h4 id="a-note-about-duplicated-index-entries-and-objectids">A note about duplicated index entries and objectIDs</h4>
+
+<p>Algolia assigns each entry in the index an objectID. It uses this attribute as primary key for an entry. If you want to update an entry, you must send the objectID for the entry you want to update. To prevent duplicated content, this package uses the page&rsquo;s URI as objectID. This way, you can generate the index as many times as you want and Algolia will only index content that has changed. If you want to override an objectID for an entry, you can especify it in the frontmatter.</p>
+
+<h1 id="license">License</h1>
+
+<p>This project is based on the lunr plugin from <a href="https://github.com/dgrigg/hugo-lunr">https://github.com/dgrigg/hugo-lunr</a>, but adapted for use with the Algolia search engine. It is under the ISC License.</p>
+
+              <h2> 本文链接：</h2>
+              <a href='https://djkloop.cn/writing/%E6%B5%8B%E8%AF%95algolia/' target="_blank">https://djkloop.cn/writing/%E6%B5%8B%E8%AF%95algolia/</a>
+              <ul id="more-post-list" class="archive readmore">
+    <h2>其他推荐：</h2>
+    
+    
+    
+        <li>
+          <a href="/posts/%E6%B5%8B%E8%AF%95algolia/">
+              <span style="display: block;font-size: 16px;">测试algolia</span>
+              </i><aside class="dates"><i class="fas fa-clock" style="font-size: 12px;margin-right:5px;line-height:1.5;"></i>2019-09-19 03:55</aside>
+          </a>
+        </li>
+    
+        <li>
+          <a href="/writing/wr-a/">
+              <span style="display: block;font-size: 16px;">Wr A</span>
+              </i><aside class="dates"><i class="fas fa-clock" style="font-size: 12px;margin-right:5px;line-height:1.5;"></i>2019-06-08 03:57</aside>
+          </a>
+        </li>
+    
+</ul>
+            </div>
+        </article>
+        
+          <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+<div class="blog-post-comments"></div>
+<script>
+    new Valine({
+        el: '.blog-post-comments', 
+        app_id: "db74NGgiUiGT5HkLTBoDK7Tl-gzGzoHsz", 
+        app_key: "ApR14unweK4ln7MlK4yDGn63", 
+        placeholder: "just go go", 
+        avatar: "mp",
+        notify: false ,
+        verify: false 
+    });
+</script>
+
+        
+      </section>
+    </div>
+    
+<footer id="footer">
+  <div class="footer-left">
+    Copyright © 2019  PoweredBy <a target="_blank" href="https://gohugo.io/">Hugo</a> <a href="http://www.miitbeian.gov.cn" rel="external nofollow noopener noreferrer" target="_blank">京ICP备18019502号 </a>
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <li> <a href="https://djkloop.cn/">Home</a></li>
+<li> <a href="https://djkloop.cn/about/">About</a></li>
+<li> <a href=" https://djkloop.cn/writing/">Writing</a></li>
+<li> <a href="javascript:;">切换主题</a></li>
+<li> <a href="https://github.com/djkloop" target="_blank">Github</a></li>
+
+
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    
+
+<script src="https://djkloop.cn/js/lib/typed.js"></script>
+<script src="https://djkloop.cn/js/main.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script>
+    if ('serviceWorker' in navigator) {
+        console.log('xxxxx')
+        window.addEventListener('load', () => {
+            navigator.serviceWorker
+                .register('/sw.js')
+                .then(registration => {
+                    console.log('SW registered: ', registration);
+                })
+                .catch(registrationError => {
+                    console.log('SW registration failed: ', registrationError);
+                });
+        });
+    }
+</script>
+
+
+
+
+  </body>
+</html>
