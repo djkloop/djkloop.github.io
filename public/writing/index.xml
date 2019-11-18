@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Go语言学习-1</title>
+      <link>https://djkloop.cn/writing/%E6%B5%8B%E8%AF%95algolia_index/</link>
+      <pubDate>Thu, 19 Sep 2019 16:26:19 +0800</pubDate>
+      
+      <guid>https://djkloop.cn/writing/%E6%B5%8B%E8%AF%95algolia_index/</guid>
+      <description> Go语言学习 var a = 1;  </description>
+    </item>
+    
+    <item>
       <title>测试algolia</title>
       <link>https://djkloop.cn/writing/%E6%B5%8B%E8%AF%95algolia/</link>
       <pubDate>Thu, 19 Sep 2019 16:01:54 +0800</pubDate>
