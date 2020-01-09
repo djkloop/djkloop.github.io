@@ -10,7 +10,8 @@
 
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-<meta name='description' itemprop="description" content=" Go语言学习 var a = 1;  ">
+<meta name='description' itemprop="description" content=" 算法基础学习.1
+ ">
 
 <meta name="keywords" content="djkloop, 前端爱好者, 前端开发, web前端博客, js, html5, css, Vue.js, React.js, Angular.js, node.js" >
 
@@ -20,12 +21,13 @@
 <meta name="author" content="djkloop"/>
 
 <meta property="og:locale" content="en_US" />
-<meta property="og:title" content="Go语言学习-1">
+<meta property="og:title" content="数据结构导论-1">
 <meta property="og:image" content="https://djkloop.cn/images/logo2.png">
-<meta property="og:description" content=" Go语言学习 var a = 1;  ">
+<meta property="og:description" content=" 算法基础学习.1
+ ">
 <meta property="og:site_name" content="😪">
 <meta name="robots" content="index,follow"/>
-<meta name="apple-mobile-web-app-title" content="Go语言学习-1">
+<meta name="apple-mobile-web-app-title" content="数据结构导论-1">
 <meta name="apple-mobile-web-app-capable" content="yes"/>
 <meta name="apple-itunes-app" content="app-id=myAppStoreID, affiliate-data=myAffiliateData, app-argument=myURL" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -60,7 +62,7 @@
     }, true);
 </script>
 
-    <title>Go语言学习-1 | 前端爱好者 - djkloop </title>
+    <title>数据结构导论-1 | 前端爱好者 - djkloop </title>
 </head>
 
 <bod>
@@ -83,10 +85,8 @@
       <span id="actions">
         <ul>
             
-            <li><a class="icon" href="https://djkloop.cn/writing/%E6%B5%8B%E8%AF%95algolia/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover='$("#i-prev").toggle();' onmouseout='$("#i-prev").toggle();'></i></a></li>
+            <li><a class="icon" href="https://djkloop.cn/writing/%E6%B5%8B%E8%AF%95algolia_index/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover='$("#i-prev").toggle();' onmouseout='$("#i-prev").toggle();'></i></a></li>
             
-            
-            <li><a class="icon" href="https://djkloop.cn/writing/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AF%BC%E8%AE%BA-1/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover='$("#i-next").toggle();' onmouseout='$("#i-next").toggle();'></i></a></li>
             
           <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover='$("#i-top").toggle();' onmouseout='$("#i-top").toggle();'></i></a></li>
           <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover='$("#i-share").toggle();' onmouseout='$("#i-share").toggle();' onclick='$("#share").toggle();return false;'></i></a></li>
@@ -99,26 +99,22 @@
       <br/>
       <div id="share" style="display: none">
           <ul>
-  <li><a class="icon" target="_blank"  href="http://v.t.sina.com.cn/share/share.php?u=https%3a%2f%2fdjkloop.cn%2fwriting%2f%25E6%25B5%258B%25E8%25AF%2595algolia_index%2f&text=Go%e8%af%ad%e8%a8%80%e5%ad%a6%e4%b9%a0-1"><i class="fab fa-weibo " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank"  href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fdjkloop.cn%2fwriting%2f%25E6%25B5%258B%25E8%25AF%2595algolia_index%2f"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank"  href="https://twitter.com/share?url=https%3a%2f%2fdjkloop.cn%2fwriting%2f%25E6%25B5%258B%25E8%25AF%2595algolia_index%2f&text=Go%e8%af%ad%e8%a8%80%e5%ad%a6%e4%b9%a0-1"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank"  href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fdjkloop.cn%2fwriting%2f%25E6%25B5%258B%25E8%25AF%2595algolia_index%2f&title=Go%e8%af%ad%e8%a8%80%e5%ad%a6%e4%b9%a0-1"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank"  href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fdjkloop.cn%2fwriting%2f%25E6%25B5%258B%25E8%25AF%2595algolia_index%2f&is_video=false&description=Go%e8%af%ad%e8%a8%80%e5%ad%a6%e4%b9%a0-1"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank"  href="mailto:?subject=Go%e8%af%ad%e8%a8%80%e5%ad%a6%e4%b9%a0-1&body=Check out this article: https%3a%2f%2fdjkloop.cn%2fwriting%2f%25E6%25B5%258B%25E8%25AF%2595algolia_index%2f"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank"  href="https://getpocket.com/save?url=https%3a%2f%2fdjkloop.cn%2fwriting%2f%25E6%25B5%258B%25E8%25AF%2595algolia_index%2f&title=Go%e8%af%ad%e8%a8%80%e5%ad%a6%e4%b9%a0-1"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank"  href="http://reddit.com/submit?url=https%3a%2f%2fdjkloop.cn%2fwriting%2f%25E6%25B5%258B%25E8%25AF%2595algolia_index%2f&title=Go%e8%af%ad%e8%a8%80%e5%ad%a6%e4%b9%a0-1"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank"  href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fdjkloop.cn%2fwriting%2f%25E6%25B5%258B%25E8%25AF%2595algolia_index%2f&title=Go%e8%af%ad%e8%a8%80%e5%ad%a6%e4%b9%a0-1"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank"  href="http://digg.com/submit?url=https%3a%2f%2fdjkloop.cn%2fwriting%2f%25E6%25B5%258B%25E8%25AF%2595algolia_index%2f&title=Go%e8%af%ad%e8%a8%80%e5%ad%a6%e4%b9%a0-1"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank"  href="http://v.t.sina.com.cn/share/share.php?u=https%3a%2f%2fdjkloop.cn%2fwriting%2f%25E6%2595%25B0%25E6%258D%25AE%25E7%25BB%2593%25E6%259E%2584%25E5%25AF%25BC%25E8%25AE%25BA-1%2f&text=%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84%e5%af%bc%e8%ae%ba-1"><i class="fab fa-weibo " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank"  href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fdjkloop.cn%2fwriting%2f%25E6%2595%25B0%25E6%258D%25AE%25E7%25BB%2593%25E6%259E%2584%25E5%25AF%25BC%25E8%25AE%25BA-1%2f"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank"  href="https://twitter.com/share?url=https%3a%2f%2fdjkloop.cn%2fwriting%2f%25E6%2595%25B0%25E6%258D%25AE%25E7%25BB%2593%25E6%259E%2584%25E5%25AF%25BC%25E8%25AE%25BA-1%2f&text=%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84%e5%af%bc%e8%ae%ba-1"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank"  href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fdjkloop.cn%2fwriting%2f%25E6%2595%25B0%25E6%258D%25AE%25E7%25BB%2593%25E6%259E%2584%25E5%25AF%25BC%25E8%25AE%25BA-1%2f&title=%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84%e5%af%bc%e8%ae%ba-1"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank"  href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fdjkloop.cn%2fwriting%2f%25E6%2595%25B0%25E6%258D%25AE%25E7%25BB%2593%25E6%259E%2584%25E5%25AF%25BC%25E8%25AE%25BA-1%2f&is_video=false&description=%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84%e5%af%bc%e8%ae%ba-1"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank"  href="mailto:?subject=%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84%e5%af%bc%e8%ae%ba-1&body=Check out this article: https%3a%2f%2fdjkloop.cn%2fwriting%2f%25E6%2595%25B0%25E6%258D%25AE%25E7%25BB%2593%25E6%259E%2584%25E5%25AF%25BC%25E8%25AE%25BA-1%2f"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank"  href="https://getpocket.com/save?url=https%3a%2f%2fdjkloop.cn%2fwriting%2f%25E6%2595%25B0%25E6%258D%25AE%25E7%25BB%2593%25E6%259E%2584%25E5%25AF%25BC%25E8%25AE%25BA-1%2f&title=%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84%e5%af%bc%e8%ae%ba-1"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank"  href="http://reddit.com/submit?url=https%3a%2f%2fdjkloop.cn%2fwriting%2f%25E6%2595%25B0%25E6%258D%25AE%25E7%25BB%2593%25E6%259E%2584%25E5%25AF%25BC%25E8%25AE%25BA-1%2f&title=%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84%e5%af%bc%e8%ae%ba-1"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank"  href="http://www.stumbleupon.com/submit?url=https%3a%2f%2fdjkloop.cn%2fwriting%2f%25E6%2595%25B0%25E6%258D%25AE%25E7%25BB%2593%25E6%259E%2584%25E5%25AF%25BC%25E8%25AE%25BA-1%2f&title=%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84%e5%af%bc%e8%ae%ba-1"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank"  href="http://digg.com/submit?url=https%3a%2f%2fdjkloop.cn%2fwriting%2f%25E6%2595%25B0%25E6%258D%25AE%25E7%25BB%2593%25E6%259E%2584%25E5%25AF%25BC%25E8%25AE%25BA-1%2f&title=%e6%95%b0%e6%8d%ae%e7%bb%93%e6%9e%84%e5%af%bc%e8%ae%ba-1"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
 </ul>
 
 
       </div>
       <div id="toc">
-            <nav id="TableOfContents">
-<ul>
-<li><a href="#go语言学习">Go语言学习</a></li>
-</ul>
-</nav>
+            
       </div>
     </span>
   </div>
@@ -127,11 +123,11 @@
         <article class="post">
             <header>
               <h1 class="posttitle" itemprop="name headline">
-                Go语言学习-1
+                数据结构导论-1
               </h1>
               <div class="meta">
                 <div class="postdate">
-                  <time datetime='2019-09-19' itemprop="datePublished">2019-09-19</time>
+                  <time datetime='2020-01-09' itemprop="datePublished">2020-01-09</time>
                 </div>
                 <div class="article-tag">
                   <i class="fa fa-eye"></i>
@@ -144,8 +140,8 @@
                   <div class="article-tag">
                     <i class="fa fa-tag"></i>
                     
-                    <a href="/tags/1111">
-                        1111</a>
+                    <a href="/tags/">
+                        </a>
                       
                   </div>
                 
@@ -154,24 +150,21 @@
               </div>
             </header>
             <div class="content">
-              
-
-<h1 id="go语言学习">Go语言学习</h1>
-
-<pre><code>var a = 1;
-</code></pre>
+              <blockquote>
+<p>算法基础学习.1</p>
+</blockquote>
 
               <h2> 本文链接：</h2>
-              <a href='https://djkloop.cn/writing/%E6%B5%8B%E8%AF%95algolia_index/' target="_blank">https://djkloop.cn/writing/%E6%B5%8B%E8%AF%95algolia_index/</a>
+              <a href='https://djkloop.cn/writing/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AF%BC%E8%AE%BA-1/' target="_blank">https://djkloop.cn/writing/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AF%BC%E8%AE%BA-1/</a>
               <ul id="more-post-list" class="archive readmore">
     <h2>其他推荐：</h2>
     
     
     
         <li>
-          <a href="/writing/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AF%BC%E8%AE%BA-1/">
-              <span style="display: block;font-size: 16px;">数据结构导论-1</span>
-              </i><aside class="dates"><i class="fas fa-clock" style="font-size: 12px;margin-right:5px;line-height:1.5;"></i>2020-01-09 03:08</aside>
+          <a href="/writing/%E6%B5%8B%E8%AF%95algolia_index/">
+              <span style="display: block;font-size: 16px;">Go语言学习-1</span>
+              </i><aside class="dates"><i class="fas fa-clock" style="font-size: 12px;margin-right:5px;line-height:1.5;"></i>2019-09-19 04:26</aside>
           </a>
         </li>
     
