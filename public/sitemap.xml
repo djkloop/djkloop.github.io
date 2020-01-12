@@ -3,13 +3,69 @@
   
   <url>
     <loc>https://djkloop.cn/archive/</loc>
-    <lastmod>2020-01-12T14:49:00+08:00</lastmod>
+    <lastmod>2020-01-12T15:43:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://djkloop.cn/categories/</loc>
+    <lastmod>2020-01-12T15:43:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://djkloop.cn/categories/react/</loc>
+    <lastmod>2020-01-12T15:43:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://djkloop.cn/archive/reactjs%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/</loc>
+    <lastmod>2020-01-12T15:43:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://djkloop.cn/tags/</loc>
+    <lastmod>2020-01-12T15:43:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://djkloop.cn/categories/vue/</loc>
+    <lastmod>2020-01-12T15:43:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://djkloop.cn/archive/vuejs%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90/</loc>
+    <lastmod>2020-01-12T15:43:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://djkloop.cn/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/</loc>
+    <lastmod>2020-01-12T15:43:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://djkloop.cn/</loc>
+    <lastmod>2020-01-12T15:43:29+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://djkloop.cn/tags/data-structure/</loc>
     <lastmod>2020-01-12T14:49:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -23,21 +79,8 @@
   </url>
   
   <url>
-    <loc>https://djkloop.cn/</loc>
-    <lastmod>2020-01-12T14:49:00+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://djkloop.cn/about/</loc>
     <lastmod>2019-06-08T01:35:45+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://djkloop.cn/tags/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

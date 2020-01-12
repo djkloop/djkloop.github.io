@@ -4,7 +4,7 @@
 </div>
 <div id="theme-tagcloud" class="tagcloud-wrap">
     {{ $tags := .Site.Taxonomies.tags.Alphabetical }}
-    {{ $v1 := where $tags "Count" ">=" 2 }}
+    {{ $v1 := where $tags "Count" ">=" 1 }}
     {{ $v2 := where $v1 "Term" "not in" (slice  "tags" "rss" "weekly") }}
       {{ range $v2 }}
         {{ if .Term }}
