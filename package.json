@@ -6,7 +6,7 @@
   "scripts": {
     "start": "hugo server --buildFuture",
     "build": "hugo --buildFuture",
-    "algolia": "hugo-algolia --config ./algolia.config.yaml -m 'isSearch'"
+    "algolia": "atomic-algolia"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
     "workbox-build": "^3.6.3"
   },
   "dependencies": {
+    "atomic-algolia": "^0.3.17",
     "gulp-htmlmin": "^5.0.1"
   }
 }

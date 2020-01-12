@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Writing on 😪</title>
@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Golang 01</title>
+      <link>https://djkloop.cn/writing/golang-01/</link>
+      <pubDate>Sun, 12 Jan 2020 12:33:46 +0800</pubDate>
+      
+      <guid>https://djkloop.cn/writing/golang-01/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>数据结构导论-1</title>
       <link>https://djkloop.cn/writing/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AF%BC%E8%AE%BA-1/</link>
       <pubDate>Thu, 09 Jan 2020 15:08:31 +0800</pubDate>
@@ -23,11 +32,11 @@
     
     <item>
       <title>Go语言学习-1</title>
-      <link>https://djkloop.cn/writing/%E6%B5%8B%E8%AF%95algolia_index/</link>
+      <link>https://djkloop.cn/writing/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0-1/</link>
       <pubDate>Thu, 19 Sep 2019 16:26:19 +0800</pubDate>
       
-      <guid>https://djkloop.cn/writing/%E6%B5%8B%E8%AF%95algolia_index/</guid>
-      <description> Go语言学习 var a = 1;  </description>
+      <guid>https://djkloop.cn/writing/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0-1/</guid>
+      <description>Go语言学习 var a = 1; </description>
     </item>
     
     <item>
@@ -39,8 +48,8 @@
       <description>hugo-algolia Generate and send indices from Hugo static sites for use with Algolia.
 An alternative to the Docsearch plugin, allowing for manual index exports. Supports YAML, JSON, and TOML front matter.
 Installation Install hugo-algolia from npm
-npm install hugo-algolia  Or
-yarn add hugo-algolia  How does it work? hugo-algolia looks into the /content folder of your site by default and places a JSON file with the export into the /public folder, but if you&amp;rsquo;d like to use custom inputs and outputs just pass an -i or -o followed by your path via command line.</description>
+npm install hugo-algolia Or
+yarn add hugo-algolia How does it work? hugo-algolia looks into the /content folder of your site by default and places a JSON file with the export into the /public folder, but if you&#39;d like to use custom inputs and outputs just pass an -i or -o followed by your path via command line.</description>
     </item>
     
     <item>
@@ -52,7 +61,7 @@ yarn add hugo-algolia  How does it work? hugo-algolia looks into the /content fo
       <description>angular cli 内置了 webpack,所以也是可以配置路径别名的. 而且配置的方式几乎是一样的.
  配置路径别名 找到你的项目根目录的 tsconfig.json 文件.
 注意: 如果你的配置不生效,需要查看你的baseUrl是否配置正确.
-{ &amp;quot;compilerOptions&amp;quot;: { &amp;quot;baseUrl&amp;quot;: &amp;quot;./src/&amp;quot;, &amp;quot;paths&amp;quot;: { &amp;quot;@app/*&amp;quot;: [&amp;quot;app/*&amp;quot;], &amp;quot;@services/*&amp;quot;: [&amp;quot;app/services/*&amp;quot;] } } }  配置之前 import { Api } from &#39;../../../../../services/api.service&#39;; import { xxx } from &#39;../../../../../services/api.xxx&#39;;  测试 if(a === b) { console.log(&#39;yellow&#39;) }  配置之后 import { Api } from &#39;@services/api.service&#39;; import { xxx } from &#39;@services/api.xxx&#39;;  一些开发中的小技巧,希望可以帮到你.</description>
+{ &amp;#34;compilerOptions&amp;#34;: { &amp;#34;baseUrl&amp;#34;: &amp;#34;./src/&amp;#34;, &amp;#34;paths&amp;#34;: { &amp;#34;@app/*&amp;#34;: [&amp;#34;app/*&amp;#34;], &amp;#34;@services/*&amp;#34;: [&amp;#34;app/services/*&amp;#34;] } } } 配置之前 import { Api } from &amp;#39;../../../../../services/api.service&amp;#39;; import { xxx } from &amp;#39;../../../../../services/api.xxx&amp;#39;; 测试 if(a === b) { console.log(&amp;#39;yellow&amp;#39;) } 配置之后 import { Api } from &amp;#39;@services/api.service&amp;#39;; import { xxx } from &amp;#39;@services/api.xxx&amp;#39;; 一些开发中的小技巧,希望可以帮到你.</description>
     </item>
     
   </channel>

@@ -2,7 +2,7 @@
 <html data-hugo-use-theme="hugo-theme-cactus-dark" lang="zh-CN">
 <head>
     
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.62.2" />
 
 <meta charset="utf-8"/>
 
@@ -13,7 +13,7 @@
 <meta name='description' itemprop="description" content="angular cli 内置了 webpack,所以也是可以配置路径别名的. 而且配置的方式几乎是一样的.
  配置路径别名 找到你的项目根目录的 tsconfig.json 文件.
 注意: 如果你的配置不生效,需要查看你的baseUrl是否配置正确.
-{ &amp;quot;compilerOptions&amp;quot;: { &amp;quot;baseUrl&amp;quot;: &amp;quot;./src/&amp;quot;, ">
+{ &amp;#34;compilerOptions&amp;#34;: { &amp;#34;baseUrl&amp;#34;: &amp;#34;./src/&amp;#34;, &amp;#34;p">
 
 <meta name="keywords" content="djkloop, 前端爱好者, 前端开发, web前端博客, js, html5, css, Vue.js, React.js, Angular.js, node.js" >
 
@@ -28,7 +28,7 @@
 <meta property="og:description" content="angular cli 内置了 webpack,所以也是可以配置路径别名的. 而且配置的方式几乎是一样的.
  配置路径别名 找到你的项目根目录的 tsconfig.json 文件.
 注意: 如果你的配置不生效,需要查看你的baseUrl是否配置正确.
-{ &amp;quot;compilerOptions&amp;quot;: { &amp;quot;baseUrl&amp;quot;: &amp;quot;./src/&amp;quot;, ">
+{ &amp;#34;compilerOptions&amp;#34;: { &amp;#34;baseUrl&amp;#34;: &amp;#34;./src/&amp;#34;, &amp;#34;p">
 <meta property="og:site_name" content="😪">
 <meta name="robots" content="index,follow"/>
 <meta name="apple-mobile-web-app-title" content="Wr A">
@@ -119,14 +119,11 @@
       </div>
       <div id="toc">
             <nav id="TableOfContents">
-<ul>
-<li><a href="#配置路径别名">配置路径别名</a>
-<ul>
-<li><a href="#配置之前">配置之前</a></li>
-<li><a href="#测试">测试</a></li>
-<li><a href="#配置之后">配置之后</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#配置之前">配置之前</a></li>
+    <li><a href="#测试">测试</a></li>
+    <li><a href="#配置之后">配置之后</a></li>
+  </ul>
 </nav>
       </div>
     </span>
@@ -163,51 +160,34 @@
               </div>
             </header>
             <div class="content">
-              
-
-<blockquote>
+              <blockquote>
 <p>angular cli 内置了 webpack,所以也是可以配置路径别名的.
 而且配置的方式几乎是一样的.</p>
 </blockquote>
-
 <h1 id="配置路径别名">配置路径别名</h1>
-
 <p>找到你的项目根目录的 <code>tsconfig.json</code> 文件.</p>
-
 <p>注意: 如果你的配置不生效,需要查看你的<code>baseUrl</code>是否配置正确.</p>
-
-<pre><code class="language-json">{
-    &quot;compilerOptions&quot;: {
-        &quot;baseUrl&quot;: &quot;./src/&quot;,
-        &quot;paths&quot;: {
-            &quot;@app/*&quot;: [&quot;app/*&quot;],
-            &quot;@services/*&quot;: [&quot;app/services/*&quot;]
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+    <span style="color:#f92672">&#34;compilerOptions&#34;</span>: {
+        <span style="color:#f92672">&#34;baseUrl&#34;</span>: <span style="color:#e6db74">&#34;./src/&#34;</span>,
+        <span style="color:#f92672">&#34;paths&#34;</span>: {
+            <span style="color:#f92672">&#34;@app/*&#34;</span>: [<span style="color:#e6db74">&#34;app/*&#34;</span>],
+            <span style="color:#f92672">&#34;@services/*&#34;</span>: [<span style="color:#e6db74">&#34;app/services/*&#34;</span>]
         }
     }
 }
 
-</code></pre>
-
-<h2 id="配置之前">配置之前</h2>
-
-<pre><code class="language-js">import { Api } from '../../../../../services/api.service';
-import { xxx } from '../../../../../services/api.xxx';
-</code></pre>
-
-<h2 id="测试">测试</h2>
-
-<pre><code class="language-js">if(a === b) {
-  console.log('yellow')
+</code></pre></div><h2 id="配置之前">配置之前</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">Api</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;../../../../../services/api.service&#39;</span>;
+<span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">xxx</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;../../../../../services/api.xxx&#39;</span>;
+</code></pre></div><h2 id="测试">测试</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">a</span> <span style="color:#f92672">===</span> <span style="color:#a6e22e">b</span>) {
+  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;yellow&#39;</span>)
 }
-</code></pre>
-
-<h2 id="配置之后">配置之后</h2>
-
-<pre><code class="language-js">import { Api } from '@services/api.service';
-import { xxx } from '@services/api.xxx';
-</code></pre>
-
-<p>一些开发中的小技巧,希望可以帮到你.</p>
+</code></pre></div><h2 id="配置之后">配置之后</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">Api</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;@services/api.service&#39;</span>;
+<span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">xxx</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;@services/api.xxx&#39;</span>;
+</code></pre></div><p>一些开发中的小技巧,希望可以帮到你.</p>
 
               <h2> 本文链接：</h2>
               <a href='https://djkloop.cn/writing/wr-a/' target="_blank">https://djkloop.cn/writing/wr-a/</a>
@@ -217,6 +197,13 @@ import { xxx } from '@services/api.xxx';
     
     
         <li>
+          <a href="/writing/golang-01/">
+              <span style="display: block;font-size: 16px;">Golang 01</span>
+              </i><aside class="dates"><i class="fas fa-clock" style="font-size: 12px;margin-right:5px;line-height:1.5;"></i>2020-01-12 12:33</aside>
+          </a>
+        </li>
+    
+        <li>
           <a href="/writing/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AF%BC%E8%AE%BA-1/">
               <span style="display: block;font-size: 16px;">数据结构导论-1</span>
               </i><aside class="dates"><i class="fas fa-clock" style="font-size: 12px;margin-right:5px;line-height:1.5;"></i>2020-01-09 03:08</aside>
@@ -224,16 +211,9 @@ import { xxx } from '@services/api.xxx';
         </li>
     
         <li>
-          <a href="/writing/%E6%B5%8B%E8%AF%95algolia_index/">
+          <a href="/writing/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0-1/">
               <span style="display: block;font-size: 16px;">Go语言学习-1</span>
               </i><aside class="dates"><i class="fas fa-clock" style="font-size: 12px;margin-right:5px;line-height:1.5;"></i>2019-09-19 04:26</aside>
-          </a>
-        </li>
-    
-        <li>
-          <a href="/writing/%E6%B5%8B%E8%AF%95algolia/">
-              <span style="display: block;font-size: 16px;">测试algolia</span>
-              </i><aside class="dates"><i class="fas fa-clock" style="font-size: 12px;margin-right:5px;line-height:1.5;"></i>2019-09-19 04:01</aside>
           </a>
         </li>
     

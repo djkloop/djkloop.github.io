@@ -75,8 +75,22 @@ params:
 
   themeVars:
     textColor: 'red'
+  
+  algolia:
+    vars: ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
+    params: ["categories", "tags", "series"]
 
 sitemap:
     changefreq: weekly
     filename: sitemap.xml
     priority: 0.5
+
+outputFormats:
+  Algolia:
+    baseName: "algolia"
+    isPlainText: true
+    mediaType: "application/json"
+    notAlternative: true
+
+outputs:
+  home: ["HTML", "RSS", "Algolia"]

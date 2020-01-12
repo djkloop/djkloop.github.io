@@ -2,7 +2,7 @@
 <html data-hugo-use-theme="hugo-theme-cactus-dark" lang="zh-CN">
 <head>
     
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.62.2" />
 
 <meta charset="utf-8"/>
 
@@ -88,7 +88,7 @@ An alternative to the Docsearch plugin, allowing for manual index exports. Suppo
             <li><a class="icon" href="https://djkloop.cn/writing/wr-a/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover='$("#i-prev").toggle();' onmouseout='$("#i-prev").toggle();'></i></a></li>
             
             
-            <li><a class="icon" href="https://djkloop.cn/writing/%E6%B5%8B%E8%AF%95algolia_index/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover='$("#i-next").toggle();' onmouseout='$("#i-next").toggle();'></i></a></li>
+            <li><a class="icon" href="https://djkloop.cn/writing/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0-1/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover='$("#i-next").toggle();' onmouseout='$("#i-next").toggle();'></i></a></li>
             
           <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover='$("#i-top").toggle();' onmouseout='$("#i-top").toggle();'></i></a></li>
           <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover='$("#i-share").toggle();' onmouseout='$("#i-share").toggle();' onclick='$("#share").toggle();return false;'></i></a></li>
@@ -117,31 +117,17 @@ An alternative to the Docsearch plugin, allowing for manual index exports. Suppo
       </div>
       <div id="toc">
             <nav id="TableOfContents">
-<ul>
-<li><a href="#hugo-algolia">hugo-algolia</a>
-<ul>
-<li>
-<ul>
-<li><a href="#installation">Installation</a></li>
-<li><a href="#how-does-it-work">How does it work?</a>
-<ul>
-<li><a href="#example">Example</a></li>
-</ul></li>
-<li><a href="#sending-to-algolia">Sending to Algolia</a></li>
-<li><a href="#what-if-i-don-t-want-to-index-a-specific-file">What if I don&rsquo;t want to index a specific file?</a></li>
-<li><a href="#options">Options</a>
-<ul>
-<li>
-<ul>
-<li><a href="#you-can-also-combine-any-of-the-above-commands-including-the-one-s-mentioned-outside-of-this-section">You can also combine any of the above commands, including the one&rsquo;s mentioned outside of this section:</a></li>
-</ul></li>
-<li><a href="#a-note-about-toml">A note about TOML</a></li>
-<li><a href="#a-note-about-duplicated-index-entries-and-objectids">A note about duplicated index entries and objectIDs</a></li>
-</ul></li>
-</ul></li>
-</ul></li>
-<li><a href="#license">License</a></li>
-</ul>
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#how-does-it-work">How does it work?</a></li>
+        <li><a href="#sending-to-algolia">Sending to Algolia</a></li>
+        <li><a href="#what-if-i-dont-want-to-index-a-specific-file">What if I don't want to index a specific file?</a></li>
+        <li><a href="#options">Options</a></li>
+      </ul>
+    </li>
+  </ul>
 </nav>
       </div>
     </span>
@@ -178,51 +164,28 @@ An alternative to the Docsearch plugin, allowing for manual index exports. Suppo
               </div>
             </header>
             <div class="content">
-              
-
-<h1 id="hugo-algolia">hugo-algolia</h1>
-
+              <h1 id="hugo-algolia">hugo-algolia</h1>
 <p><strong>Generate and send indices from Hugo static sites for use with Algolia.</strong></p>
-
 <p>An alternative to the <a href="https://community.algolia.com/docsearch/">Docsearch</a> plugin, allowing for manual index exports. Supports YAML, JSON, and TOML front matter.</p>
-
 <h3 id="installation">Installation</h3>
-
 <p>Install <code>hugo-algolia</code> from <a href="https://npmjs.org">npm</a></p>
-
 <pre><code>npm install hugo-algolia
-</code></pre>
-
-<p>Or</p>
-
+</code></pre><p>Or</p>
 <pre><code>yarn add hugo-algolia
-</code></pre>
-
-<h3 id="how-does-it-work">How does it work?</h3>
-
-<p><code>hugo-algolia</code> looks into the <code>/content</code> folder of your site by default and places a JSON file with the export into the <code>/public</code> folder, but if you&rsquo;d like to use custom inputs and outputs just pass an <code>-i</code> or <code>-o</code> followed by your path via command line.</p>
-
+</code></pre><h3 id="how-does-it-work">How does it work?</h3>
+<p><code>hugo-algolia</code> looks into the <code>/content</code> folder of your site by default and places a JSON file with the export into the <code>/public</code> folder, but if you'd like to use custom inputs and outputs just pass an <code>-i</code> or <code>-o</code> followed by your path via command line.</p>
 <h4 id="example">Example</h4>
-
 <p>In your package.json file:</p>
-
 <pre><code>//Default
 scripts: {
     &quot;index&quot;: &quot;hugo-algolia&quot;
 }
-</code></pre>
-
-<p>or</p>
-
+</code></pre><p>or</p>
 <pre><code>scripts: {
     &quot;index&quot;: &quot;hugo-algolia -i \&quot;content/subdir/**\&quot; -o public/my-index.json&quot;
 }
-</code></pre>
-
-<h3 id="sending-to-algolia">Sending to Algolia</h3>
-
+</code></pre><h3 id="sending-to-algolia">Sending to Algolia</h3>
 <p>You can send your index to Algolia by including your API key, app ID, and index name in your config.yaml, which you can find in your Algolia account dashboard. Then, pass an <code>-s</code> flag to your <code>hugo-algolia</code> command.</p>
-
 <pre><code>---
 baseURL: &quot;/&quot;
 languageCode: &quot;en-us&quot;
@@ -235,64 +198,43 @@ algolia:
   key: &quot;[your API key]&quot;
   appID: &quot;[your app id]&quot;
 ---
-</code></pre>
-
-<p>then</p>
-
+</code></pre><p>then</p>
 <pre><code>scripts: {
     &quot;index-and-send&quot;: &quot;hugo-algolia -s&quot;
 }
-</code></pre>
-
-<p><strong>If you don&rsquo;t want to set your write key in your <code>config.yaml</code>, you can also use environment variables. Just set a variable <code>ALGOLIA_WRITE_KEY</code> to the write key for your account, and the module will use that instead.</strong></p>
-
-<h3 id="what-if-i-don-t-want-to-index-a-specific-file">What if I don&rsquo;t want to index a specific file?</h3>
-
-<p>That&rsquo;s cool! Just set the <code>index</code> param in your file&rsquo;s front matter to <code>false</code> and <code>hugo-algolia</code> will skip it during the indexing process. Content with <code>draft: true</code> will also be ignored.</p>
-
+</code></pre><p><strong>If you don't want to set your write key in your <code>config.yaml</code>, you can also use environment variables. Just set a variable <code>ALGOLIA_WRITE_KEY</code> to the write key for your account, and the module will use that instead.</strong></p>
+<h3 id="what-if-i-dont-want-to-index-a-specific-file">What if I don't want to index a specific file?</h3>
+<p>That's cool! Just set the <code>index</code> param in your file's front matter to <code>false</code> and <code>hugo-algolia</code> will skip it during the indexing process. Content with <code>draft: true</code> will also be ignored.</p>
 <h3 id="options">Options</h3>
-
 <p>There are a few flags you can use to customize your indices:</p>
-
 <ul>
-<li><code>-m</code> - Create multiple indices based on the default <code>index</code> param in the front matter of each markdown file, or another specified param.
-<code>
-hugo-algolia -m &quot;[optional-custom-param]&quot;
-</code></li>
-<li><code>-p</code> - Partially index files using only specified params.
-<code>
-hugo-algolia -p &quot;[param], [param], [param]&quot;
-</code></li>
-
-<li><p><code>-all</code> - By default, <code>hugo-algolia</code> skips content that doesn&rsquo;t have an <code>index</code> param, or whichever param you specify in your command. If you&rsquo;d like to index those files, use this flag.</p></li>
-
-<li><p><code>--config</code> - Pass in a custom config file.</p>
-
+<li>
+<p><code>-m</code> - Create multiple indices based on the default <code>index</code> param in the front matter of each markdown file, or another specified param.</p>
+<pre><code>hugo-algolia -m &quot;[optional-custom-param]&quot;
+</code></pre><pre><code></code></pre></li>
+<li>
+<p><code>-p</code> - Partially index files using only specified params.</p>
+<pre><code>hugo-algolia -p &quot;[param], [param], [param]&quot;
+</code></pre><pre><code></code></pre></li>
+<li>
+<p><code>-all</code> - By default, <code>hugo-algolia</code> skips content that doesn't have an <code>index</code> param, or whichever param you specify in your command. If you'd like to index those files, use this flag.</p>
+</li>
+<li>
+<p><code>--config</code> - Pass in a custom config file.</p>
 <pre><code>hugo-algolia --config ./mysweetconfig.yaml
+</code></pre><pre><code>
 </code></pre></li>
 </ul>
-
-<h5 id="you-can-also-combine-any-of-the-above-commands-including-the-one-s-mentioned-outside-of-this-section">You can also combine any of the above commands, including the one&rsquo;s mentioned outside of this section:</h5>
-
+<h5 id="you-can-also-combine-any-of-the-above-commands-including-the-ones-mentioned-outside-of-this-section">You can also combine any of the above commands, including the one's mentioned outside of this section:</h5>
 <pre><code>hugo-algolia -m &quot;categories&quot; -p &quot;title, uri, categories&quot; -all
-</code></pre>
-
-<p>This command would create multiple indices depending on the category of each <code>.md</code> file, but only inlcude the <code>title</code>, <code>uri</code>, and <code>categories</code> information in the output file.</p>
-
+</code></pre><p>This command would create multiple indices depending on the category of each <code>.md</code> file, but only inlcude the <code>title</code>, <code>uri</code>, and <code>categories</code> information in the output file.</p>
 <h4 id="a-note-about-toml">A note about TOML</h4>
-
-<p>The <code>gray-matter</code> package used in this module does not support TOML front matter out of the box. If you&rsquo;re using TOML in your front matter, just use the <code>toml</code> flag in your command.</p>
-
+<p>The <code>gray-matter</code> package used in this module does not support TOML front matter out of the box. If you're using TOML in your front matter, just use the <code>toml</code> flag in your command.</p>
 <pre><code>hugo-algolia -toml
-</code></pre>
-
-<h4 id="a-note-about-duplicated-index-entries-and-objectids">A note about duplicated index entries and objectIDs</h4>
-
-<p>Algolia assigns each entry in the index an objectID. It uses this attribute as primary key for an entry. If you want to update an entry, you must send the objectID for the entry you want to update. To prevent duplicated content, this package uses the page&rsquo;s URI as objectID. This way, you can generate the index as many times as you want and Algolia will only index content that has changed. If you want to override an objectID for an entry, you can especify it in the frontmatter.</p>
-
+</code></pre><h4 id="a-note-about-duplicated-index-entries-and-objectids">A note about duplicated index entries and objectIDs</h4>
+<p>Algolia assigns each entry in the index an objectID. It uses this attribute as primary key for an entry. If you want to update an entry, you must send the objectID for the entry you want to update. To prevent duplicated content, this package uses the page's URI as objectID. This way, you can generate the index as many times as you want and Algolia will only index content that has changed. If you want to override an objectID for an entry, you can especify it in the frontmatter.</p>
 <h1 id="license">License</h1>
-
-<p>This project is based on the lunr plugin from <a href="https://github.com/dgrigg/hugo-lunr">https://github.com/dgrigg/hugo-lunr</a>, but adapted for use with the Algolia search engine. It is under the ISC License.</p>
+<p>This project is based on the lunr plugin from <a href="https://github.com/dgrigg/hugo-lunr,">https://github.com/dgrigg/hugo-lunr,</a> but adapted for use with the Algolia search engine. It is under the ISC License.</p>
 
               <h2> 本文链接：</h2>
               <a href='https://djkloop.cn/writing/%E6%B5%8B%E8%AF%95algolia/' target="_blank">https://djkloop.cn/writing/%E6%B5%8B%E8%AF%95algolia/</a>
@@ -302,6 +244,13 @@ hugo-algolia -p &quot;[param], [param], [param]&quot;
     
     
         <li>
+          <a href="/writing/golang-01/">
+              <span style="display: block;font-size: 16px;">Golang 01</span>
+              </i><aside class="dates"><i class="fas fa-clock" style="font-size: 12px;margin-right:5px;line-height:1.5;"></i>2020-01-12 12:33</aside>
+          </a>
+        </li>
+    
+        <li>
           <a href="/writing/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%AF%BC%E8%AE%BA-1/">
               <span style="display: block;font-size: 16px;">数据结构导论-1</span>
               </i><aside class="dates"><i class="fas fa-clock" style="font-size: 12px;margin-right:5px;line-height:1.5;"></i>2020-01-09 03:08</aside>
@@ -309,16 +258,9 @@ hugo-algolia -p &quot;[param], [param], [param]&quot;
         </li>
     
         <li>
-          <a href="/writing/%E6%B5%8B%E8%AF%95algolia_index/">
+          <a href="/writing/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0-1/">
               <span style="display: block;font-size: 16px;">Go语言学习-1</span>
               </i><aside class="dates"><i class="fas fa-clock" style="font-size: 12px;margin-right:5px;line-height:1.5;"></i>2019-09-19 04:26</aside>
-          </a>
-        </li>
-    
-        <li>
-          <a href="/writing/wr-a/">
-              <span style="display: block;font-size: 16px;">Wr A</span>
-              </i><aside class="dates"><i class="fas fa-clock" style="font-size: 12px;margin-right:5px;line-height:1.5;"></i>2019-06-08 03:57</aside>
           </a>
         </li>
     
