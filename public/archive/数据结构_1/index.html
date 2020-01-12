@@ -10,10 +10,10 @@
 
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-<meta name='description' itemprop="description" content=" 数据结构它不香吗?
+<meta name='description' itemprop="description" content="数据结构它不香吗?
  引言 数据结构(Data structure)  数据结构是计算机组织组织数据和存储数据的方式 是指一组相互之间存在一种或多种特定关系的数据的组织方式和他们&amp;gt; 在计算机内的存储方式，以及定义在该组数据尚德一组操作
  计算机解决问题的步骤 1. 建立数据模型 2. 设计算法 3. 编程实现算法  数据的逻辑结构  是指数据及数据的组织方式
- 数据结构，算法和程序的关系 ">
+ 数据结构，算法和程序的关系  ">
 
 <meta name="keywords" content="djkloop, 前端爱好者, 前端开发, web前端博客, js, html5, css, Vue.js, React.js, Angular.js, node.js" >
 
@@ -25,10 +25,10 @@
 <meta property="og:locale" content="en_US" />
 <meta property="og:title" content="数据结构_1">
 <meta property="og:image" content="https://djkloop.cn/images/logo2.png">
-<meta property="og:description" content=" 数据结构它不香吗?
+<meta property="og:description" content="数据结构它不香吗?
  引言 数据结构(Data structure)  数据结构是计算机组织组织数据和存储数据的方式 是指一组相互之间存在一种或多种特定关系的数据的组织方式和他们&amp;gt; 在计算机内的存储方式，以及定义在该组数据尚德一组操作
  计算机解决问题的步骤 1. 建立数据模型 2. 设计算法 3. 编程实现算法  数据的逻辑结构  是指数据及数据的组织方式
- 数据结构，算法和程序的关系 ">
+ 数据结构，算法和程序的关系  ">
 <meta property="og:site_name" content="😪">
 <meta name="robots" content="index,follow"/>
 <meta name="apple-mobile-web-app-title" content="数据结构_1">
@@ -132,6 +132,19 @@
     <li><a href="#数据元素data-element">数据元素(Data Element)</a></li>
     <li><a href="#数据项data-item">数据项(Data Item)</a></li>
     <li><a href="#数据数据元素数据项构成了数据组织的3个层次">数据，数据元素，数据项构成了数据组织的3个层次</a></li>
+    <li><a href="#逻辑结构logical-structure">逻辑结构(Logical Structure)</a></li>
+    <li><a href="#物理结构physical-structure--存储结构">物理结构(Physical Structure) / 存储结构</a></li>
+    <li><a href="#运算">运算</a>
+      <ul>
+        <li><a href="#基本运算">基本运算</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#算法的设计应当满足">算法的设计应当满足</a></li>
+    <li><a href="#时间复杂度">时间复杂度</a></li>
+    <li><a href="#空间复杂度">空间复杂度</a></li>
   </ul>
 </nav>
       </div>
@@ -215,8 +228,83 @@
 <p>数据库中，数据项又称为<strong>字段/域</strong>。它是数据的不可分割的<strong>最小标识单位</strong>。实际问题中的数据成为<strong>原始数据</strong>
 <img src="../images/pic_1.jpg" alt="三者描述关系"></p>
 </blockquote>
+<h2 id="逻辑结构logical-structure">逻辑结构(Logical Structure)</h2>
+<blockquote>
+<p>指数据元素之间的结构关系
+<img src="../images/pic_2.png" alt=""></p>
+</blockquote>
+<ol>
+<li>集合</li>
+</ol>
+<blockquote>
+<p>任意两个节点之间都<strong>没有邻接关系</strong>, 组织形式<strong>松散</strong></p>
+</blockquote>
+<ol start="2">
+<li>线性结构</li>
+</ol>
+<blockquote>
+<p>节点按逻辑关系依次排列形成一条&rdquo;<strong>链</strong>&quot;, 结点之间一个一个<strong>依次相邻接</strong>。</p>
+</blockquote>
+<ol start="3">
+<li>树状结构</li>
+</ol>
+<blockquote>
+<p>具有<strong>分支，层次</strong>特性，上层的结点可以和下层多个结点相邻，但下层结点只能和上层的一个结点相邻接。</p>
+</blockquote>
+<ol start="4">
+<li>图状结构</li>
+</ol>
+<blockquote>
+<p><strong>最复杂</strong>，<strong>任何</strong>两个结点都可以<strong>相邻接</strong>。</p>
+</blockquote>
+<h2 id="物理结构physical-structure--存储结构">物理结构(Physical Structure) / 存储结构</h2>
+<blockquote>
+<p>指数据结构在机内的表示，数据的逻辑结构在计算机的实现
+<img src="../images/pic_3.png" alt=""></p>
+</blockquote>
+<ol>
+<li>数据的存储结构</li>
+</ol>
+<blockquote>
+<p>数据在计算机内的表示形式</p>
+</blockquote>
+<ol start="2">
+<li>存储结构的主要部分
+<ol>
+<li>存储结点(每个存储结点存放一个数据元素)数据元素之间关联方式的表示</li>
+<li>数据结构的存储 = 数据元素的存储 + 元素逻辑关系的存储</li>
+</ol>
+</li>
+</ol>
+<h2 id="运算">运算</h2>
+<blockquote>
+<p>指在某种逻辑结构上施加操作, 即对逻辑结构的加工.
+加工型运算: 其操作改变原逻辑结构的值、
+引用型运算: 其操作不改变原逻辑结构的值.</p>
+</blockquote>
+<h3 id="基本运算">基本运算</h3>
+<pre><code>1. 建立
+2. 查找
+3. 读取
+4. 插入
+5. 删除
+</code></pre>
 <h1 id="算法及描述">算法及描述</h1>
 <h1 id="算法分析">算法分析</h1>
+<h2 id="算法的设计应当满足">算法的设计应当满足</h2>
+<pre><code> 1. 正确性：对于合法的输入产生符合要求的输出
+ 2. 易读性：算法应该易读，便于交流，这也是保证算法正确性的前提，添加注释也是一种增加可读性的办法。
+ 3. 健壮性：当输入非法数据时，算法还能做出适当的反应而不会崩溃，如输出错误信息，算法中应当考虑适当的错误处理。
+ 4. 时空性：指算法的时间复杂度,空间复杂度，算法分析主要分析算法的时间复杂度和空间复杂度，目的是提高算法的效率。
+</code></pre>
+<h2 id="时间复杂度">时间复杂度</h2>
+<blockquote>
+<p>算法运行时需要的总步数，通常是问题规模的函数。</p>
+</blockquote>
+<h2 id="空间复杂度">空间复杂度</h2>
+<blockquote>
+<p>算法执行时所占用的存储空间，通常是问题规模的函数。</p>
+</blockquote>
 
               <h2> 本文链接：</h2>
               <a href='https://djkloop.cn/archive/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84_1/' target="_blank">https://djkloop.cn/archive/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84_1/</a>
