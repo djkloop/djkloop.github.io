@@ -1,3 +1,0 @@
-{{ $cssTemplate := resources.Get "css/main.scss" }}
-{{ $style := $cssTemplate | resources.ExecuteAsTemplate "css/main.scss" . | resources.ToCSS }}
-<link rel="stylesheet" href="{{ $style.RelPermalink }}" type="text/css">
